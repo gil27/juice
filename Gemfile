@@ -22,4 +22,4 @@ end
 
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
-
+gem 'font-awesome-sass'
