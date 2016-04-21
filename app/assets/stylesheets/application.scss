@@ -18,4 +18,24 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "stylish";
+
+.search-box{
+	width: 600px;
+	height: 57px;
+	font-size: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    -webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.header {
+    background: asset-url("juice.jpg") 50% 50% / cover no-repeat scroll;
+}
+
+.jumbotron {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+h1.white{ color: #FFFFFF; }

@@ -1,4 +1,24 @@
-<div class="text-vertical-center">
-	<h1>Search#index</h1>
-	<p>Find me in app/views/search/index.html.erb</p>
+<div class="jumbotron header">
+  <div class="container">
+  	<div class="col-md-6 col-md-offset-3">
+	    <center><h1 class="white">Juice Searcher!</h1></center>
+	    <%= form_tag :search, {method: :get} do %>
+				<%= search_field_tag :search, @search, placeholer: 'Search...', class: 'search-box' %>
+			<% end %>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+    	<center><h2>Results</h2></center>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>© 2015 Company, Inc.</p>
+  </footer>
 </div>
