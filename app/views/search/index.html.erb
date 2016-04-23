@@ -2,7 +2,7 @@
   <div class="container">
   	<div class="col-md-6 col-md-offset-3">
 	    <center><h1 class="white">Juice Searcher!</h1></center>
-	    <%= form_tag :search, {method: :get} do %>
+	    <%= form_tag :search, remote: true, method: :get do %>
 				<%= search_field_tag :search, @search, placeholer: 'Search...', class: 'search-box' %>
 			<% end %>
     </div>
@@ -13,6 +13,9 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
     	<center><h2>Results</h2></center>
+    	<div id="results">
+    		<%= @search %>
+    	</div>
     </div>
   </div>
 
