@@ -7,23 +7,23 @@ class ScoreTest < ActiveSupport::TestCase
   	@score = Score.new
   end
 
-  test "Calculate scores" do
-  	@score.calculate("How Can I cancel my account subscription")
+  test "analyze scores" do
+  	@score.analyze("How Can I cancel my account subscription")
     assert_equal 3, @score.score
 
-    @score.calculate("How Can I cancel my email account")
+    @score.analyze("How Can I cancel my email account")
     assert_equal 3, @score.score
 
-    @score.calculate("How Can I cancel")
+    @score.analyze("How Can I cancel")
     assert_equal 1, @score.score
 
-    @score.calculate("How Can I cancel my subscription")
+    @score.analyze("How Can I cancel my subscription")
     assert_equal 2, @score.score
 
-    @score.calculate("")
+    @score.analyze("")
     assert_equal 0, @score.score
 
-    @score.calculate(nil)
+    @score.analyze(nil)
     assert_equal 0, @score.score
   end
 end

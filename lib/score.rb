@@ -2,17 +2,35 @@ require 'stop_words'
 class Score
 	include StopWords
 
-	def calculate phrase
-		@meaninful_words = meaninful_words(phrase, " ")
+	# Public: Duplicate some text an arbitrary number of times.
+	#
+	# phrase  - The to be analyzed.
+	#
+	# Examples
+	#
+	#   analyze('How can I cancel my subscription')
+	#   # => ['cancel', 'subscription']
+	#
+	# Returns the meaningful words.
+	def analyze phrase
+		@meaningful_words = meaningful_words(phrase, " ")
 	end
 
+	# Public: Total of meaningful words.
+	#
+	# Examples
+	#
+	#   score
+	#   # => 3
+	#
+	# Returns the score.
 	def score
-		@meaninful_words.count
+		@meaningful_words.count
 	end
 
 	private
 
-	def meaninful_words phrase, divider=" "
+	def meaningful_words phrase, divider=" "
 		phrase = normalize_phrase(phrase).split(divider)
 		filter(phrase)
 	end
