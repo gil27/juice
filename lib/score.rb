@@ -13,7 +13,15 @@ class Score
 	private
 
 	def meaninful_words phrase, divider=" ", locale="en"
-		phrase = phrase.to_s.downcase.split(divider)
+		phrase = normalize_phrase(phrase).split(divider)
+		filter phrase
+	end
+
+	def normalize_phrase(phrase)
+		phrase.to_s.downcase
+	end
+
+	def filter
 		phrase.reject{ |word| stopwords_list(locale).include? word }
 	end
 end
