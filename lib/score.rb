@@ -4,6 +4,6 @@ class Score
 	end
 
 	def score
-		2
+		0
 	end
 end

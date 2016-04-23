@@ -6,15 +6,19 @@ class ScoreTest < ActiveSupport::TestCase
   setup do
   	@score = Score.new
   end
-  test "Calculate score" do
+
+  test "Calculate scores" do
   	@score.calculate("How Can I cancel my account subscription")
-    assert 2, @score.score
+    assert_equal 2, @score.score
 
     @score.calculate("How Can I cancel my email account")
-    assert 2, @score.score
+    assert_equal 2, @score.score
 
     @score.calculate("How Can I cancel")
-    assert 0, @score.score
+    assert_equal 0, @score.score
+
+    @score.calculate("How Can I cancel my subscription")
+    assert_equal 1, @score.score
   end
 end
 
