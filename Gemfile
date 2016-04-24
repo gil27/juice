@@ -23,3 +23,5 @@ end
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-sass'
+gem 'sinatra', require: false
+gem 'sidekiq'
