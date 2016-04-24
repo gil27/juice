@@ -28,7 +28,8 @@
 
 
 <script type="text/javascript">
-  $("#search").keyup(function(){
-    $("#search-form").submit();
+  $("#search").keyup(function(e){
+    if(e.which !== 32)
+      $("#search-form").submit();
   });
 </script>
