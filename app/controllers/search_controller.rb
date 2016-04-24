@@ -12,6 +12,6 @@ class SearchController < ApplicationController
   private
 
   def save_search
-    AnalyzerJob.perform_later(query: params[:search], user_ip: request.ip)
+    AnalyzerJob.perform_now(params[:search], request.ip)
   end
 end
