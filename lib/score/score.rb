@@ -1,4 +1,4 @@
-require 'stop_words'
+require_relative 'stop_words.rb'
 class Score
 	include StopWords
 
