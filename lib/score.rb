@@ -40,6 +40,11 @@ class Score
 	end
 
 	def filter phrase
-		phrase.reject{ |word| stopwords_list.include? word }
+		words = phrase.reject{ |word| stopwords_list.include? word }
+		words.reject{ |word| valid_word? word}
+	end
+
+	def valid_word? word
+		stopwords_list.collect{ |w| w if w.include? word }.uniq.any?
 	end
 end

@@ -21,6 +21,6 @@ module StopWords
 	#
 	# Given a filename it loads the file into @file variable
 	def load_file(filename="stopwords_en.yml")
-		@file ||= YAML.load_file(WORDS_PATH << filename.to_s)
+		@file ||= YAML.load_file("#{WORDS_PATH}#{filename.to_s}")
 	end
 end
