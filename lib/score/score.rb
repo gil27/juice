@@ -4,7 +4,7 @@ class Score
 
 	# Public: Duplicate some text an arbitrary number of times.
 	#
-	# phrase  - The to be analyzed.
+	# phrase  - String The to be analyzed.
 	#
 	# Examples
 	#
@@ -33,6 +33,9 @@ class Score
 	# Private: Normalize and Bring just the meaningful words based on
 	# the yaml list
 	#
+	# phrase - string
+	# divider - string
+	#
 	# Examples
 	#
 	#   meaningful_words 'How do I cancel my account', ' '
@@ -45,6 +48,8 @@ class Score
 	end
 
 	# Private: Converts do string and downcase the phrase.
+	#
+	# phrase - string
 	#
 	# Examples
 	#
@@ -59,6 +64,8 @@ class Score
 	# Private: Bring just the meaningful words based on
 	# the yaml list
 	#
+	# phrase - string
+	#
 	# Examples
 	#
 	#   meaningful_words 'How do I cancel my account', ' '
@@ -71,6 +78,8 @@ class Score
 	end
 
 	# Private: Checks if it is a middle word
+	#
+	# word - String
 	#
 	# Examples
 	#
