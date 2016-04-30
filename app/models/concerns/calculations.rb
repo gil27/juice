@@ -7,6 +7,9 @@ module Calculations
 		(Array.new << terms).flatten.uniq
 	end
 
+	def top_queries
+		pluck(:query).inject(Hash.new(0)) { |total, e| total[e] += 1;total}
+	end
 
 	def top_terms_occurrence
 		all_terms.inject(Hash.new(0)) { |total, e| total[e] += 1;total}

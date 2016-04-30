@@ -5,10 +5,10 @@
     </div>
     <div class="panel-body">
       <div class="list-group">
-      	<% @stats.each do |s| %>
+      	<% Analyzer.top_queries.each do |k, v| %>
         <a href="#" class="list-group-item">
-          <span class="badge"><%= time_ago_in_words(s.created_at) %></span>
-          <i class="fa fa-fw fa-search"></i><%= s.query %>
+          <span class="badge"><%= pluralize(v, 'search') %></span>
+          <i class="fa fa-fw fa-search"></i>&nbsp;<%= k %>
         </a>
         <% end %>
       </div>

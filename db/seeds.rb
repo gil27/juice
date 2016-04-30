@@ -35,3 +35,18 @@ Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade my sto
 Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able')
 Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able to inv')
 Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able to invite new users to my account')
+
+Analyzer.create(user_ip: '192.168.2.5', query: 'Am I able to invite new users to my account')
+Analyzer.create(user_ip: '192.168.2.5', query: 'How can I add more users to my account')
+Analyzer.create(user_ip: '192.168.2.5', query: "How do I cancel my subscription")
+Analyzer.create(user_ip: '192.168.2.5', query: "What is my account number")
+Analyzer.create(user_ip: '192.168.2.5', query: "How do I signup")
+
+
+Analyzer.create(user_ip: '192.168.2.11', query: "How do I cancel my subscription")
+Analyzer.create(user_ip: '192.168.2.11', query: "What is my account number")
+
+
+Analyzer.create(user_ip: '192.168.2.27', query: "How do I sig")
+Analyzer.create(user_ip: '192.168.2.27', query: "How do I signu")
+Analyzer.create(user_ip: '192.168.2.27', query: "How do I signup")
