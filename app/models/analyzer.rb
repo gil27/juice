@@ -1,4 +1,6 @@
 class Analyzer < ActiveRecord::Base
+	extend Calculations
+
 	after_commit :delete_unecessary_query
 
 	def to_s
@@ -8,7 +10,7 @@ class Analyzer < ActiveRecord::Base
 	def to_str
 		to_s
 	end
-
+	
 	private
 
 	# Private: Delete unecessary query from database.

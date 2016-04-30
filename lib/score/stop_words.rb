@@ -13,7 +13,7 @@ module StopWords
 	#
 	# Returns the array of stopwords.
 	def stopwords_list locale="en", filename=""
-		load_file.fetch(locale.to_s).split(" ")
+		load_file['stop_list'].fetch(locale.to_s).split(" ")
 	end
 
 	private 

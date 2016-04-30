@@ -28,6 +28,10 @@ Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrad')
 Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade m')
 Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade my plan')
 
-Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to updgade my')
-Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to updgade my storage')
-Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to updgade my storage limit')
+Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade my')
+Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade my storage')
+Analyzer.create(user_ip: '192.168.2.2', query: 'Is it possible to upgrade my storage limit')
+
+Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able')
+Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able to inv')
+Analyzer.create(user_ip: '192.168.2.8', query: 'Am I able to invite new users to my account')

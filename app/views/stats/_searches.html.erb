@@ -1,0 +1,17 @@
+<div class="col-lg-8">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Searches Panel</h3>
+    </div>
+    <div class="panel-body">
+      <div class="list-group">
+      	<% @stats.each do |s| %>
+        <a href="#" class="list-group-item">
+          <span class="badge"><%= time_ago_in_words(s.created_at) %></span>
+          <i class="fa fa-fw fa-search"></i><%= s.query %>
+        </a>
+        <% end %>
+      </div>
+    </div>
+	</div>
+</div>
