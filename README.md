@@ -1,5 +1,7 @@
 # README
 
+[![Code Climate](https://codeclimate.com/github/gil27/juice/badges/gpa.svg)](https://codeclimate.com/github/gil27/juice)
+
 ## Search Stats Analyct
 
 Warning: Do it while having a fresh *juice* or a beer :sunglasses:
