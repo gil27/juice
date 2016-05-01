@@ -1,28 +1,19 @@
-== README
+# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Search Stats Analyct
 
-Things you may want to cover:
+Warning: Do it while having a fresh *juice* or a beer :sunglasses:
 
-* Ruby version
+### Getting Started
+You will need to have redis up and running :)
 
-* System dependencies
+clone this app: `git clone git@github.com:gil27/juice.git`
+then: `bin/setup`
 
-* Configuration
+If you want you can use the seed data to check a live example.
+run `rake db:seed`
+run `rake test` to run the test suite
+run `bundle exec sidekiq -C config/sidekiq.yml`
+run `rails server`
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Obs: This is just a sample app!
